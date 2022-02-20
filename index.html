@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section id="header">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner inner">
+          <div class="header__top top row align-items-center justify-content-between">
+            <div class="header__link-box">
+              <ul class="header__list row align-items-center">
+                <li class="header__item w-auto d-inline-block">
+                  <a class="header__link header__link-act" href="#">Chat with us</a>
+                </li>
+                <li class="header__item w-auto d-inline-block">
+                  <a class="header__link" href="tel:+420336775664">+420 336 775 664</a>
+                </li>
+                <li class="header__item w-auto d-inline-block">
+                  <a class="header__link" href="#">info@freshnesecom.com</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header__nav-box">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav__item">
+                      <a class="nav__link active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav__item w-auto d-inline-block">
+                      <a class="nav__link" href="#">About Us</a>
+                    </li>
+                    <li class="nav__item w-auto d-inline-block">
+                      <a class="nav__link" href="#">Careers</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <div class="header__content content d-flex align-items-center justify-content-between">
+            <div class="header__logo-box">
+              <a class="header__logo-link" href="index.html">
+                <img src="imgs/logo.svg" alt="logo">
+              </a>
+            </div>
+
+            <div class="content__search-box search">
+              <form class="search__form row row-cols-3 align-items-center " action="#">
+                <div class="dropdown">
+                  <button class="btn form__drop-btn p-0 " type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All categories
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <input class="form__input" type="text" name="search" id="search"
+                  placeholder="Search Products, categories ...">
+                <button class="search-btn btn p-0 col-2">
+                  <i class='bx bx-search'></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="content__btn-box btns row align-items-center justify-content-end w-auto">
+              <button class="btn btns__btn">
+                <i class='bx bx-user'></i>
+              </button>
+
+              <button class="btn btns__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+
+
+
+  <main class="main">
+    <div class="main__inner">
+
+      <div class="dropdowns drop">
+        <div class="container">
+          <div class="drop__inner inner">
+            <ul class="drop__list row row-cols-1 col-12 p-0 m-0">
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Bakery
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fruit and vegetables
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Meat and fish
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Drinks
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Kitchen
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Special nutrition
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Baby
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Pharmacy
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="products">
+        <div class="container">
+          <div class="products__inner inner">
+
+            <div class="cotegory__menus-box row justify-content-between">
+              <div class="cotegor__menus co-menu col-3">
+                <h3 class="co-menu__title">Category menu</h3>
+                <ul class="co-menu__list">
+                  <li class="co-menu__item">
+                    <a class="co-menu__link" href="#">Bakery</a>
+                  </li>
+                  <li class="co-menu__item">
+                    <a class="co-menu__link" href="#">Fruit and vegetables</a>
+                  </li>
+                  <li class="co-menu__item">
+                    <a class="co-menu__link" href="#">Meat and fish</a>
+                  </li>
+                  <li class="co-menu__item">
+                    <a class="co-menu__link" href="#">Drinks</a>
+                  </li>
+                  <li class="co-menu__item">
+                    <a class="co-menu__link" href="#">Kitchen</a>
+                  </li>
+                </ul>
+
+                <div class="co-menu__btn-box">
+                  <a class="co-menu__btn" href="about.html">More categories
+                    <i class='bx bx-chevron-right'></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="cotegor__img-box co-img col-9">
+                <ul class="co-img__list row row-cols-6 align-items-center justify-content-center">
+                  <li class="co-img__item">
+                    <div class="co-img__item-box img-box">
+                      <p class="img-box__tit">Banner subfocus</p>
+                      <h3 class="img-box__title">Space for heading</h3>
+                      <button class="img-box__btn">Read recepies
+                        <i class='bx bx-chevron-right'></i>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="co-img__item">
+                    <div class="co-img__item-box img-box">
+                      <p class="img-box__tit">Banner subfocus</p>
+                      <h3 class="img-box__title">Space for heading</h3>
+                      <button class="img-box__btn">Read recepies
+                        <i class='bx bx-chevron-right'></i>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="products__menus produc">
+              <div class="produc__box cotegor row justify-content-between">
+                <div class="cotegor__menus co-menu col-3">
+                  <h3 class="co-menu__title">Best selling products</h3>
+                  <ul class="co-menu__list">
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Bakery</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Fruit and vegetables</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Meat and fish</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Drinks</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Kitchen</a>
+                    </li>
+                  </ul>
+
+                  <div class="co-menu__btn-box">
+                    <a class="co-menu__btn" href="about.html">More categories
+                      <i class='bx bx-chevron-right'></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="produc__shop-box pro-shop col-9">
+                  <ul class="pro-shop__list row col-12">
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <!-- <img class="shop-item__img" src="https:picsum.photos/id/6/237/180" alt="img"> -->
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <!-- <img class="shop-item__img" src="https:picsum.photos/id/8/237/180" alt="img"> -->
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <!-- <img class="shop-item__img" src="https:picsum.photos/id/2/237/180" alt="img"> -->
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="products__menus produc">
+              <div class="produc__box cotegor row justify-content-between">
+                <div class="cotegor__menus co-menu col-3">
+                  <h3 class="co-menu__title">Best selling products</h3>
+                  <ul class="co-menu__list">
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Bakery</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Fruit and vegetables</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Meat and fish</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Drinks</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Kitchen</a>
+                    </li>
+                  </ul>
+
+                  <div class="co-menu__btn-box">
+                    <a class="co-menu__btn" href="about.html">More categories
+                      <i class='bx bx-chevron-right'></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="produc__shop-box pro-shop col-9">
+                  <ul class="pro-shop__list row col-12">
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <!-- <img class="shop-item__img" src="https:picsum.photos/id/6/237/180" alt="img"> -->
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <!-- <img class="shop-item__img" src="https:picsum.photos/id/8/237/180" alt="img"> -->
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <!-- <img class="shop-item__img" src="https:picsum.photos/id/2/237/180" alt="img"> -->
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="products__menus produc pb-0">
+              <div class="produc__box cotegor row justify-content-between">
+                <div class="cotegor__menus co-menu col-3">
+                  <h3 class="co-menu__title">Best selling products</h3>
+                  <ul class="co-menu__list">
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Bakery</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Fruit and vegetables</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Meat and fish</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Drinks</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Kitchen</a>
+                    </li>
+                  </ul>
+
+                  <div class="co-menu__btn-box">
+                    <a class="co-menu__btn" href="about.html">More categories
+                      <i class='bx bx-chevron-right'></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="produc__shop-box pro-shop col-9">
+                  <ul class="pro-shop__list row col-12">
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <!-- <img class="shop-item__img" src="https:picsum.photos/id/6/237/180" alt="img"> -->
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <!-- <img class="shop-item__img" src="https:picsum.photos/id/8/237/180" alt="img"> -->
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <!-- <img class="shop-item__img" src="https:picsum.photos/id/2/237/180" alt="img"> -->
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="customers__slider slider">
+        <div class="container">
+          <div class="slider__inner inner py-5 pt-0">
+            <div class="slider__box row align-items-center justify-content-between">
+              <h3 class="slider__title w-auto">Our customers says</h3>
+              <button class="slider__btn btn w-auto">Button
+                <i class='bx bx-chevron-right'></i>
+              </button>
+            </div>
+
+            <div class="slider__list-box">
+              <ul class="slider__list p-0 d-flex justify-content-between">
+                <li class="slider__item">
+                  <div class="slider__content mx-2 position-relative">
+                    <p class="slider__text">
+                      “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will
+                      get
+                      all
+                      what you need by writiing a text here “
+                    </p>
+
+                    <img class="slider__img" src=" imgs/customers-user-img-1.png" alt="img">
+                  </div>
+                </li>
+
+                <li class="slider__item">
+                  <div class="slider__content mx-2 position-relative">
+                    <p class="slider__text">
+                      “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will
+                      get
+                      all
+                      what you need by writiing a text here “
+                    </p>
+
+                    <img class="slider__img" src=" imgs/customers-user-img-1.png" alt="img">
+                  </div>
+                </li>
+
+                <li class="slider__item">
+                  <div class="slider__content mx-2 position-relative">
+                    <p class="slider__text">
+                      “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will
+                      get
+                      all
+                      what you need by writiing a text here “
+                    </p>
+
+                    <img class="slider__img" src=" imgs/customers-user-img-1.png" alt="img">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="headline head">
+        <div class="container">
+          <div class="head__inner inner py-5 slider produc">
+            <div class="slider__box  pt-0 row align-items-center justify-content-between">
+              <h3 class="slider__title w-auto">Our customers says</h3>
+              <button class="slider__btn btn w-auto">Button
+                <i class='bx bx-chevron-right'></i>
+              </button>
+            </div>
+
+            <div class="produc__shop-box pro-shop">
+              <ul class="row col-12 head__list">
+                <li class="pro-shop__item col-3 head__item">
+                  <div class="pro-shop__item-box shop-item">
+                    <div class="shop-item__img-box">
+                      <!-- <img class="shop-item__img" src="https:picsum.photos/id/6/237/180" alt="img"> -->
+                    </div>
+
+                    <h4 class="shop-item__title">Product Title</h4>
+                    <p class="shop-item__text">
+                      Space for a product description
+                    </p>
+                    <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                      <p class="shop-buy__mony">1.48 USD <br>
+                      </p>
+                      <button class="shop-buy__btn">Buy now</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="pro-shop__item col-3 head__item">
+                  <div class="pro-shop__item-box shop-item">
+                    <div class="shop-item__img-box">
+                      <!-- <img class="shop-item__img" src="https:picsum.photos/id/6/237/180" alt="img"> -->
+                    </div>
+
+                    <h4 class="shop-item__title">Product Title</h4>
+                    <p class="shop-item__text">
+                      Space for a product description
+                    </p>
+                    <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                      <p class="shop-buy__mony">1.48 USD <br>
+                      </p>
+                      <button class="shop-buy__btn">Buy now</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="pro-shop__item col-3 head__item">
+                  <div class="pro-shop__item-box shop-item">
+                    <div class="shop-item__img-box">
+                      <span class="shop-item__img-span">- 36 %</span>
+                      <!-- <img class="shop-item__img" src="https:picsum.photos/id/8/237/180" alt="img"> -->
+                    </div>
+
+                    <h4 class="shop-item__title">Product Title</h4>
+                    <p class="shop-item__text">
+                      Space for a product description
+                    </p>
+                    <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                      <p class="shop-buy__mony">1.48 USD <br>
+                        <span class="shop-buy__mony-tit">48.56</span>
+                      </p>
+                      <button class="shop-buy__btn">Buy now</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="pro-shop__item col-3 head__item">
+                  <div class="pro-shop__item-box shop-item">
+                    <div class="shop-item__img-box">
+                      <span class="shop-item__img-span">- 36 %</span>
+                      <!-- <img class="shop-item__img" src="https:picsum.photos/id/2/237/180" alt="img"> -->
+                    </div>
+
+                    <h4 class="shop-item__title">Product Title</h4>
+                    <p class="shop-item__text">
+                      Space for a product description
+                    </p>
+                    <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                      <p class="shop-buy__mony">1.48 USD <br>
+                        <span class="shop-buy__mony-tit">48.56</span>
+                      </p>
+                      <button class="shop-buy__btn">Buy now</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="blog">
+        <div class="container">
+          <div class="blog__inner inner slider">
+            <div class="slider__box row pb-0 align-items-center justify-content-between">
+              <h3 class="slider__title w-auto">Read our Blog posts</h3>
+              <button class="slider__btn btn w-auto">Button
+                <i class='bx bx-chevron-right'></i>
+              </button>
+            </div>
+
+
+            <div class="blog__main pt-4 pb-5 px-2 d-flex">
+              <div class="blog__left left-con position-relative w-100 shop-item me-4">
+                <span class="shop-item__img-span">Dinner tips</span>
+                <h3 class="left-con__title text-white">Our chef tips for a great and tasty dinner ready in
+                  20 minutes</h3>
+
+                <div class="left-con__user">
+                  <img class="left-con__user_img me-2" src="imgs/blog-user-img.png" alt="img">
+                  <span class="left-con__user-tit text-white me-2">Author</span>
+                  <span class="left-con__user-tit text-white">17. 6. 2020</span>
+                </div>
+              </div>
+
+              <div class="blog__center-right-box d-flex">
+                <div class="blog__cenetr cen-con w-100 me-4">
+                  <div class="cen-con__img mb-4">
+                    <img class="cen-con-img" src="imgs/blog-img-2.png" alt="img">
+                  </div>
+                  <div class="cen-con__title-box shop-item">
+                    <span class="shop-item__img-span position-static mb-3">Dinner tips</span>
+                    <h4 class="cen-con__title mb-3">Which vegetable your family will love and want’s eat each day</h4>
+                    <span class="left-con__user-tit me-2">Author</span>
+                    <span class="left-con__user-tit">17. 6. 2020</span>
+                  </div>
+                </div>
+
+                <div class="blog__right-box rig-con">
+                  <div class="blog__right rig-con d-flex mb-4">
+                    <div class="rig-con">
+                      <p class="rig-con__title">Salat is kinda good start to your morning routines</p>
+                      <span class="left-con__user-tit text-dark"">Author</span>
+                  <span class=" left-con__user-tit text-dark">17. 6. 2020</span>
+                    </div>
+                    <div class="rig-con__img ms-3">
+                      <img class="rig-con-img" src="imgs/blog-img-3.png" alt="img">
+                    </div>
+                  </div>
+                  <div class="blog__right rig-con d-flex mb-4">
+                    <div class="rig-con">
+                      <p class="rig-con__title">Salat is kinda good start to your morning routines</p>
+                      <span class="left-con__user-tit text-dark"">Author</span>
+                  <span class=" left-con__user-tit text-dark">17. 6. 2020</span>
+                    </div>
+                    <div class="rig-con__img ms-3">
+                      <img class="rig-con-img" src="imgs/blog-img-4.png" alt="img">
+                    </div>
+                  </div>
+                  <div class="blog__right rig-con d-flex mb-4">
+                    <div class="rig-con">
+                      <p class="rig-con__title">Salat is kinda good start to your morning routines</p>
+                      <span class="left-con__user-tit text-dark"">Author</span>
+                  <span class=" left-con__user-tit text-dark">17. 6. 2020</span>
+                    </div>
+                    <div class="rig-con__img ms-3">
+                      <img class="rig-con-img" src="imgs/blog-img-4.png" alt="img">
+                    </div>
+                  </div>
+
+                  <div class="blog__right rig-con d-flex blog-rifgt-res d-none">
+                    <div class="rig-con">
+                      <p class="rig-con__title">Salat is kinda good start to your morning routines</p>
+                      <span class="left-con__user-tit text-dark"">Author</span>
+                    <span class=" left-con__user-tit text-dark">17. 6. 2020</span>
+                    </div>
+                    <div class="rig-con__img ms-3">
+                      <img class="rig-con-img" src="imgs/blog-img-4.png" alt="img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner inner pb-5">
+        <div class="footer__menus pt-5 pb-4 px-2 fo-menus">
+          <ul class="fo-menus__list d-flex justify-content-between">
+            <li class="fo-menus__item">
+              <h3 class="fo__item-title mb-2">Get in touch</h3>
+              <ul class="fo__item-list">
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" aria-current="page" href="#">About Us</a>
+                </li>
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" href="#">Careers</a>
+                </li>
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" href="#">Press Releases</a>
+                </li>
+                <li class="fo__item__item">
+                  <a class="nav__link" href="#">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fo-menus__item">
+              <h3 class="fo__item-title mb-2">Connections</h3>
+              <ul class="fo__item-list">
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" aria-current="page" href="#">Facebook</a>
+                </li>
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" href="#">Twitter</a>
+                </li>
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" href="#">Instagram</a>
+                </li>
+                <li class="fo__item__item">
+                  <a class="nav__link" href="#">Youtube</a>
+                </li>
+                <li class="fo__item__item">
+                  <a class="nav__link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fo-menus__item">
+              <h3 class="fo__item-title mb-2">LinkedIn</h3>
+              <ul class="fo__item-list">
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" aria-current="page" href="#">Become an Affiliate</a>
+                </li>
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" href="#">Advertise your product</a>
+                </li>
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" href="#">Advertise your product</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fo-menus__item">
+              <h3 class="fo__item-title mb-2">Account</h3>
+              <ul class="fo__item-list">
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" aria-current="page" href="#">Your account</a>
+                </li>
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" href="#">Returns Centre</a>
+                </li>
+                <li class="fo__item__item mb-2">
+                  <a class="nav__link" href="#">100 % purchase protection</a>
+                </li>
+                <li class="fo__item__item">
+                  <a class="nav__link" href="#">Chat with us</a>
+                </li>
+                <li class="fo__item__item">
+                  <a class="nav__link" href="#">Help</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__tags tags">
+          <h3 class="tags__title mb-2">Product tags</h3>
+
+          <ul class="tags__list row align-items-center">
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Mushrooms</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Mushrooms</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Mushrooms</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Lemons</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Lemons</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Lemons</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Lemons</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Beans</a></li>
+            <li class="tags__item w-auto"><a class="tags__link" href="#">Lemons</a></li>
+          </ul>
+          <p class="footer__text mb-0">Copyright © 2020 petrbilek.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
